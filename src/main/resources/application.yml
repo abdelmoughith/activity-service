@@ -4,6 +4,9 @@ server:
 spring:
   application:
     name: activity-service
+  cloud:
+    config:
+      enabled: false
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/activity_service_db?createDatabaseIfNotExist=true&useSSL=false&serverTimezone=UTC
@@ -34,4 +37,3 @@ logging:
   level:
     root: INFO
     pack.activityservice: DEBUG
-
